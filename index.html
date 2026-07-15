@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasi Chiguru - Fresh Microgreens | Launching Soon</title>
+    <style>
+        /* Color Palette & Base Reset */
+        :root {
+            --primary-dark: #113f1e;
+            --primary-light: #44a047;
+            --accent-green: #eaf5eb;
+            --text-dark: #1a2e1f;
+            --text-muted: #556b5a;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            background-color: var(--white);
+            line-height: 1.6;
+        }
+
+        /* Container Utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Layout */
+        header {
+            padding: 25px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .brand-logo {
+            max-width: 160px;
+            height: auto;
+        }
+
+        /* Hero Wrapper */
+        .hero {
+            padding: 80px 0;
+            background: linear-gradient(180deg, var(--accent-green) 0%, var(--white) 100%);
+            text-align: center;
+        }
+
+        .badge-container {
+            display: inline-block;
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 10px rgba(17, 63, 30, 0.15);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: var(--primary-dark);
+            line-height: 1.2;
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+
+        .hero .subtitle {
+            font-size: 20px;
+            color: var(--primary-light);
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+
+        /* Feature Value Cards Layout */
+        .features-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: var(--primary-dark);
+            margin-bottom: 50px;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 30px 24px;
+            border-radius: 16px;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(17, 63, 30, 0.08);
+        }
+
+        .icon-wrapper {
+            width: 55px;
+            height: 55px;
+            background-color: var(--accent-green);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 18px;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Footer Branding */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        footer .kannada-tagline {
+            font-size: 18px;
+            margin-bottom: 12px;
+            opacity: 0.95;
+            letter-spacing: 0.5px;
+        }
+
+        footer .copyright {
+            font-size: 13px;
+            opacity: 0.6;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 32px; }
+            .hero .subtitle { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Block -->
+    <header>
+        <img src="logo.png" alt="Hasi Chiguru Logo" class="brand-logo">
+    </header>
+
+    <!-- Main Hero Block -->
+    <section class="hero">
+        <div class="container">
+            <div class="badge-container">LAUNCHING SOON!</div>
+            <h1>FRESH MICROGREENS</h1>
+            <div class="subtitle">Maximum Nutrition.</div>
+            <p>Stay tuned for our first harvest and pre-orders.</p>
+        </div>
+    </section>
+
+    <!-- Value Highlights Grid -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Hasi Chiguru?</h2>
+            <div class="grid-layout">
+                
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper">🌱</div>
+                    <h3>Nutrient Dense</h3>
+                    <p>Loaded with essential vitamins, minerals & antioxidants to fuel your daily wellness journey.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper">🛡️</div>
+                    <h3>100% Chemical Free</h3>
+                    <p>Grown completely naturally without any harmful pesticides, synthetics, or crop chemicals.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper">✂️</div>
+                    <h3>Freshly Harvested</h3>
+                    <p>Harvested daily directly from our clean shelves for guaranteed maximum freshness and quality.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper">📍</div>
+                    <h3>Fresh Local Delivery</h3>
+                    <p>Harvested fresh and swiftly delivered.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Block -->
+    <footer>
+        <div class="container">
+            <p class="kannada-tagline">ಹಸಿ ಚಿಗುರು – ಚಿಕ್ಕ ಚಿಗುರು, ದೊಡ್ಡ ಪೋಷಣೆ.</p>
+            <p class="copyright">&copy; 2026 Hasi Chiguru. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
